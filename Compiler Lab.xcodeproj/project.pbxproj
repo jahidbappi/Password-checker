@@ -16,10 +16,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		552DDAFA2EC9CBE5007B9A39 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		552DDAEE2EC9CBBC007B9A39 /* Compiler Lab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Compiler Lab"; sourceTree = BUILT_PRODUCTS_DIR; };
+		552DDAFC2EC9CBE5007B9A39 /* Password checker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Password checker"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -28,10 +38,22 @@
 			path = "Compiler Lab";
 			sourceTree = "<group>";
 		};
+		552DDAFD2EC9CBE5007B9A39 /* Password checker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Password checker";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		552DDAEB2EC9CBBC007B9A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		552DDAF92EC9CBE5007B9A39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				552DDAF02EC9CBBC007B9A39 /* Compiler Lab */,
+				552DDAFD2EC9CBE5007B9A39 /* Password checker */,
 				552DDAEF2EC9CBBC007B9A39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				552DDAEE2EC9CBBC007B9A39 /* Compiler Lab */,
+				552DDAFC2EC9CBE5007B9A39 /* Password checker */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +106,28 @@
 			productReference = 552DDAEE2EC9CBBC007B9A39 /* Compiler Lab */;
 			productType = "com.apple.product-type.tool";
 		};
+		552DDAFB2EC9CBE5007B9A39 /* Password checker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 552DDB002EC9CBE5007B9A39 /* Build configuration list for PBXNativeTarget "Password checker" */;
+			buildPhases = (
+				552DDAF82EC9CBE5007B9A39 /* Sources */,
+				552DDAF92EC9CBE5007B9A39 /* Frameworks */,
+				552DDAFA2EC9CBE5007B9A39 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				552DDAFD2EC9CBE5007B9A39 /* Password checker */,
+			);
+			name = "Password checker";
+			packageProductDependencies = (
+			);
+			productName = "Password checker";
+			productReference = 552DDAFC2EC9CBE5007B9A39 /* Password checker */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					552DDAED2EC9CBBC007B9A39 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					552DDAFB2EC9CBE5007B9A39 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
@@ -111,12 +160,20 @@
 			projectRoot = "";
 			targets = (
 				552DDAED2EC9CBBC007B9A39 /* Compiler Lab */,
+				552DDAFB2EC9CBE5007B9A39 /* Password checker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
 		552DDAEA2EC9CBBC007B9A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		552DDAF82EC9CBE5007B9A39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,6 +314,22 @@
 			};
 			name = Release;
 		};
+		552DDB012EC9CBE5007B9A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		552DDB022EC9CBE5007B9A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -274,6 +347,15 @@
 			buildConfigurations = (
 				552DDAF62EC9CBBC007B9A39 /* Debug */,
 				552DDAF72EC9CBBC007B9A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		552DDB002EC9CBE5007B9A39 /* Build configuration list for PBXNativeTarget "Password checker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552DDB012EC9CBE5007B9A39 /* Debug */,
+				552DDB022EC9CBE5007B9A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
